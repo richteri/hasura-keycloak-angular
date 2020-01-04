@@ -1,0 +1,9 @@
+<h1>AppComponent</h1>
+<div>
+Username: {{ username }} | Roles: {{ roles | json }} | <a *ngIf="username" (click)="logout($event)" href="#">Logout</a>
+</div>
+
+<div>
+  <a [routerLink]="'factory'">Factory</a> | <a [routerLink]="'plant'">Plant</a>
+</div>
+<router-outlet></router-outlet>

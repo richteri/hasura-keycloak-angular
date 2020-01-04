@@ -1,0 +1,81 @@
+{
+  "rulesDirectory": [
+    "node_modules/codelyzer"
+  ],
+  "extends": "angular-tslint-rules",
+  "rules": {
+    "component-selector": [
+      true,
+      "element",
+      [
+        "app",
+        "ngx",
+        "test"
+      ],
+      "kebab-case"
+    ],
+    "directive-selector": [
+      true,
+      "attribute",
+      [
+        "app",
+        "ngx",
+        "test"
+      ],
+      "camelCase"
+    ],
+    "no-empty": [
+      true,
+      "allow-empty-catch",
+      "allow-empty-functions"
+    ],
+    "only-arrow-functions": [
+      true,
+      "allow-declarations"
+    ],
+    "component-max-inline-declarations": [
+      true,
+      {
+        "template": 40
+      }
+    ],
+    "no-implicit-dependencies": [
+      false,
+      "dev",
+      [
+        "src",
+        "app"
+      ]
+    ],
+    "no-console": false,
+    "template-i18n": false,
+    "typedef": false,
+    "newline-per-chained-call": false,
+    "comment-type": false,
+    "prefer-inline-decorator": false,
+    "template-no-call-expression": false,
+    "no-object-literal-type-assertion": false,
+    "prefer-template": false,
+    "no-void-expression": false,
+    "no-redundant-jsdoc": false,
+    "variable-name": false,
+    "invalid-void": false,
+    "promise-function-async": false,
+    "no-floating-promises": false,
+    "max-file-line-count": false,
+    "template-use-track-by-function": false,
+    "prefer-output-readonly": false,
+    "no-forward-ref": false,
+    "prefer-function-over-method": false,
+    "array-type": false,
+    "attr-lowercase": false,
+    "prefer-readonly": false,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ]
+  }
+}
